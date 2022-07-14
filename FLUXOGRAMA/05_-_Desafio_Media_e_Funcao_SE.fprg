@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alanf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-01 03:23:41 "/>
+        <attribute name="created" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIwMjo1ODozMyAiOzI2NzI="/>
+        <attribute name="edited" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIwMzoyMzo0MSAiOzI7Mjc3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="janeiro, fevereiro, marco, abril, media" type="Integer" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Preencha seu nome:&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Ol&#225; &quot; &amp; nome &amp; &quot;! Insira a quantidade de vendas do m&#234;s de Janeiro&quot;" newline="True"/>
+            <input variable="janeiro"/>
+            <output expression="&quot;Insira a quantidade de vendas do m&#234;s de Fevereiro&quot;" newline="True"/>
+            <input variable="fevereiro"/>
+            <output expression="&quot;Insira a quantidade de vendas do m&#234;s de Mar&#231;o&quot;" newline="True"/>
+            <input variable="marco"/>
+            <output expression="&quot;Insira a quantidade de vendas do m&#234;s de Abril&quot;" newline="True"/>
+            <input variable="abril"/>
+            <output expression="&quot;A m&#233;dia de vendas dos quatro meses foi de:&quot;" newline="True"/>
+            <assign variable="media" expression="(janeiro+fevereiro+marco+abril)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;=100">
+                <then>
+                    <output expression="&quot;PARAB&#201;NS, voc&#234; ir&#225; receber um adicional de 10% sobre suas vendas, pois sua m&#233;dia vendida foi igual ou superior a 100!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;INFELIZMENTE, voc&#234; ir&#225; receber apenas 3% de adicional sobre suas vendas, pois sua m&#233;dia vendida foi abaixo de 100!!!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

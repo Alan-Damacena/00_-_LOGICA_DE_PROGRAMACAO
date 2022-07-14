@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alanf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-01 01:00:20 "/>
+        <attribute name="created" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIxMjo0NDozMyAiOzI2Njg="/>
+        <attribute name="edited" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIwMTowMDoyMCAiOzI7Mjc2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="preco1, preco2, preco3, preco4, media, soma" type="Real" array="False" size=""/>
+            <input variable="preco1"/>
+            <input variable="preco2"/>
+            <input variable="preco3"/>
+            <input variable="preco4"/>
+            <assign variable="media" expression="(preco1+preco2+preco3+preco4)/4"/>
+            <assign variable="soma" expression="preco1+preco2+preco3+preco4"/>
+            <output expression="media" newline="True"/>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alanf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-01 03:34:16 "/>
+        <attribute name="created" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIwMzoyOTo0OSAiOzI2Nzg="/>
+        <attribute name="edited" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIwMzozNDoxNiAiOzE7Mjc3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, limite" type="Integer" array="False" size=""/>
+            <assign variable="numero" expression="0"/>
+            <assign variable="limite" expression="10"/>
+            <while expression="numero&lt;=limite">
+                <output expression="&quot;9 x &quot; &amp; numero &amp; &quot; = &quot; &amp; numero*9" newline="True"/>
+                <assign variable="numero" expression="numero+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

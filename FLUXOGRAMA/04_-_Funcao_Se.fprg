@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="alanf"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-01 02:58:31 "/>
+        <attribute name="created" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIwMToxNTo1MiAiOzI2NjU="/>
+        <attribute name="edited" value="YWxhbmY7QUxBTl9UUkFCQUxITzsyMDIyLTA3LTAxOyIwMjo1ODozMSAiOzE7Mjc3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Por gentileza, digite seu nome:&quot;" newline="True"/>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <input variable="cliente"/>
+            <output expression="&quot;Voc&#234; possui cart&#227;o de cr&#233;dito? (true or false)&quot;" newline="True"/>
+            <declare name="TemCartao" type="Boolean" array="False" size=""/>
+            <input variable="TemCartao"/>
+            <declare name="NumeroDoCartao" type="String" array="False" size=""/>
+            <if expression="TemCartao">
+                <then>
+                    <output expression="&quot;Digite o n&#250;mero do seu cart&#227;o:&quot;" newline="True"/>
+                    <input variable="NumeroDoCartao"/>
+                    <output expression="&quot;Parab&#233;ns, compra conclu&#237;da com sucesso!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente, sua compra n&#227;o poder&#225; ser conclu&#237;da!!!&quot;" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
